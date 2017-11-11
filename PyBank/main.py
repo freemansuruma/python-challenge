@@ -43,6 +43,9 @@ with open(csvpath, newline='') as csvfile:
 
     least_month = least_month_row.iloc[0]
 
+# Export file to excel
+csvfile_pd.to_excel('Resources/PyBank.xlsx', index=False)
+
 # Display the information being requested after analysis
 
     print('Financial Analysis')
